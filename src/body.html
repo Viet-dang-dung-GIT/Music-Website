@@ -1,0 +1,193 @@
+<html>
+  <head>
+    <style>
+      body {
+        box-sizing: border-box;
+      }
+      
+      .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10% 50% 40%;
+      }
+
+      .icon-home-search,
+      .icon-library
+       {
+        background-color: white;
+        border: 0.2px solid;
+        border-radius: 10px;
+        padding: 20%;
+        flex-direction: column;
+      }
+
+      .icon-home-search img,
+      .icon-library img
+      {
+        margin:10px ;
+        width: 20px;
+        height: auto;
+        padding-left: 15%;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .scroll-library {
+        height: 276px; 
+        overflow-y: auto; 
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+
+      .scroll-library img:hover {
+        background-color: gray;
+      }
+
+      .music , 
+      .single
+      {
+        flex-direction: column;
+        background-color: white;
+        border: 0.2px solid;
+        border-radius: 10px;
+        height: 500px; 
+        overflow-y: auto; 
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+
+      .music {
+        display: block ;
+        background-color: blueviolet;
+        position: relative;
+        margin: 0;
+        padding: 0;
+      }
+
+      
+      .music-icon-header-page {
+        
+        display: flex;
+        margin-bottom: 10px;
+        z-index: 1000;
+        background-color: wheat;
+        border:  1px;
+        border-radius: 5px;
+      }
+
+      .music .music-icon-header-page {
+        position: fixed;
+      }
+
+
+
+      .prev-next-icon {
+        padding-bottom: 5px;
+      }
+
+      .prev-next-icon img,
+      .avata-user-login img 
+      {
+        width: 20px;
+        height: auto;
+        margin: 3px;
+
+      }
+
+      .avata-user-login {
+        justify-content: right;
+        padding-bottom: 5px ;
+      }
+
+      
+      .music-container img {
+        margin-top: 15%;
+        width: 30%;
+      }
+     
+
+      .single {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="icon">
+
+        <div class="icon-home-search">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/3917/3917033.png" alt="Home"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/3917/3917061.png" alt="Search"></a>
+        </div>
+
+        <div class="icon-library">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/9856/9856297.png" alt=""></a>
+          <div class="scroll-library">
+              <img src="https://www.flaticon.com/free-animated-icon/search_8722522" alt="">
+              <img src="https://www.flaticon.com/free-animated-icon/search_8722522" alt="">
+              <img src="https://www.flaticon.com/free-animated-icon/search_8722522" alt="">
+              <img src="https://www.flaticon.com/free-animated-icon/search_8722522" alt="">
+              <img src="https://www.flaticon.com/free-animated-icon/search_8722522" alt="">
+              <img src="https://www.flaticon.com/free-animated-icon/search_8722522" alt="">
+              <img src="https://www.flaticon.com/free-animated-icon/search_8722522" alt="">
+              <img src="https://www.flaticon.com/free-animated-icon/search_8722522" alt="">
+              <img src="https://www.flaticon.com/free-animated-icon/search_8722522" alt="">
+              <img src="https://www.flaticon.com/free-animated-icon/search_8722522" alt="">
+              <img src="https://www.flaticon.com/free-animated-icon/search_8722522" alt="">
+              <img src="https://www.flaticon.com/free-animated-icon/search_8722522" alt="">
+          </div>
+        </div>
+    </div>
+      <div class="music">
+          
+        <div class="music-icon-header-page">
+         
+            <div class="prev-next-icon">
+              <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/11423/11423567.png" alt=""></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/1549/1549454.png" alt=""></a>
+            </div>
+            <div class="avata-user-login">
+              <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/11171/11171396.png" alt=""></a>
+              <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/3602/3602145.png" alt=""></a>
+              <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/1239/1239608.png" alt=""></a>
+            </div>
+          
+   
+            
+        </div>
+        <div class="music-container">
+          <img src="https://cdn-share-sprites.flaticon.com/pack/13/13135/13135247-self-control_3x2.jpg" alt="">
+          <img src="https://cdn-share-sprites.flaticon.com/pack/13/13135/13135247-self-control_3x2.jpg" alt="">
+          <img src="https://cdn-share-sprites.flaticon.com/pack/13/13135/13135247-self-control_3x2.jpg" alt="">
+          <img src="https://cdn-share-sprites.flaticon.com/pack/13/13135/13135247-self-control_3x2.jpg" alt="">
+          <img src="https://cdn-share-sprites.flaticon.com/pack/13/13135/13135247-self-control_3x2.jpg" alt="">
+          <img src="https://cdn-share-sprites.flaticon.com/pack/13/13135/13135247-self-control_3x2.jpg" alt="">
+          <span>Good Morning</span>
+          <label for="">
+            <div>
+              Music
+              <video src="https://youtu.be/NngRD9ZDDDU" controls></video>
+            </audio>
+            </div>
+            
+              
+            </audio>
+          </label>
+        </div>
+        
+
+
+      </div>
+      <div class="single">
+
+
+
+      </div>
+    </div>
+   
+    <section>
+
+    </section>
+    
+  </body>
+</html>

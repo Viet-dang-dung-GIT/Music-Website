@@ -1,0 +1,222 @@
+<html>
+  <head>
+    <style>
+      header {
+          display: block;
+          width: 100%;
+      }
+
+      #navbar {
+        width: 100%;
+        text-align: right;
+        border-bottom: 1px #333 solid;
+      }
+
+      #navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+  
+      #navbar li {
+        display: inline-block;
+        position: relative;
+      }
+  
+      #navbar a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+      }
+  
+      /* Style for the first-level dropdown */
+      #navbar .nav-layout-1,
+      #navbar .nav-layout-2 {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+  
+      /* Position the second-level dropdown */
+      #navbar .nav-layout-2 {
+        left: 100%;
+        top: 0;
+        margin-left: 20px;
+      }
+  
+      /* Show dropdown on hover */
+      #navbar li:hover .nav-layout-1,
+      #navbar .nav-layout-1 li:hover .nav-layout-2 {
+        display: block;
+      }
+
+      #header-bar {
+      
+        display: grid;
+        grid-template-columns: 10% 70% 20%;
+        align-items: center;
+        background-color: #333;
+        color: white;
+
+      }
+
+      .search-bar {
+        margin:10px;
+      }
+  
+      #in-search {
+        padding: 8px;
+        flex: 1;
+        border: 1px solid #ccc;
+        border-radius: 5px 0 0 5px;
+      }
+  
+      #btn-search {
+
+        padding: 8px;
+        background-color: #4CAF50;
+        color: white;
+        border: 1px solid #4CAF50;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+      }
+
+      #btn-search:hover{
+        background-color: #333;
+      }
+
+      .sign-bar {
+      
+        display: inline-flex;
+        margin: 10px;
+        text-align: center;
+        justify-content: center;
+      }
+    
+  
+      .btn-login,
+      .btn-register {
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+      }
+  
+      .btn-login:hover,
+      .btn-register:hover  {
+        background-color: steelblue;
+        color: aqua;
+      }
+
+      .logo-bar {
+        text-align: center;
+        background-color: #f2f2f2;
+        width: 50px;
+        height: 50px;
+      }
+  
+      /* Add styling for the logo image */
+      .logo-bar img {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <header>
+
+
+    <div id="header-bar">
+      <div class="logo-bar">
+          <img src="https://i.pinimg.com/236x/ca/9e/e5/ca9ee558c8016e18dd30e798ac1d38c9.jpg" alt="">
+      </div>
+
+      <div class="seacrh-bar">
+          <input type="text" id="in-search" placeholder="Search...">
+          <button id="btn-search">Search</button>
+      </div>
+
+      <div class="sign-bar">
+        <a class="btn-login" href="#">Login</a>
+        <a class="btn-register" href="#">Register</a>
+        </div>
+    </div>
+    
+    <nav id="navbar">
+      <ul>
+        <li><a href="">Topic</a>
+            <ul class="nav-layout-1">
+              <li><a href="">1</a>
+                
+                <ul class="nav-layout-2">
+                  <li><a href="">5</a></li>
+                  <li><a href="">6</a></li>
+                  <li><a href="">7</a></li>
+                  <li><a href="">8</a></li>
+                </ul>
+              
+              </li>
+              <li><a href="">2</a></li>
+              <li><a href="">3</a></li>
+              <li><a href="">4</a></li>
+            </ul>
+
+           
+        </li>
+        <li><a href="">Rank</a>
+
+          <ul class="nav-layout-1">
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+
+        </li>
+        <li><a href="">Album</a>
+
+          <ul class="nav-layout-1">
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+
+        </li>
+        <li><a href="">Music Video</a>
+
+          <ul class="nav-layout-1">
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+        
+        </li>
+        <li><a href="">Single</a>
+        
+          <ul class="nav-layout-1">
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+
+        </li>
+        <li><a href="">Postcart</a>
+
+          <ul class="nav-layout-1">
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+        
+        </li>
+      </ul>
+    </nav>
+  </header>
+</html>
